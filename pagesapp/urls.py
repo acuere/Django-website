@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import HomePageView, AboutPageView,SupportPageView,PrivacyPolicuPageView
+
+from .views import HomePageView, AboutPageView, SupportPageView, PrivacyPolicuPageView
 
 urlpatterns = [
     path("support/", PrivacyPolicuPageView.as_view(), name='privacy'),
